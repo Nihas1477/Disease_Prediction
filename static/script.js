@@ -1,7 +1,4 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
-    // Show the Diabetes Prediction section by default
     document.getElementById("diabetes").style.display = "block";
 });
 
@@ -24,7 +21,6 @@ function validateForm(event) {
     var selects = event.target.getElementsByTagName("select");
     var isValid = true;
 
-    // Check input fields
     for (var i = 0; i < inputs.length; i++) {
         if (inputs[i].value === "") {
             isValid = false;
@@ -32,7 +28,6 @@ function validateForm(event) {
         }
     }
 
-    // Check select fields
     if (isValid) {
         for (var j = 0; j < selects.length; j++) {
             if (selects[j].value === "") {
@@ -42,9 +37,8 @@ function validateForm(event) {
         }
     }
 
-    // Display error message if any field is empty
     if (!isValid) {
         alert("Please fill in all the fields.");
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault();
     }
 }

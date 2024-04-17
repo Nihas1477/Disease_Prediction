@@ -16,20 +16,21 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    /* Set a fixed height for each .sub container */
     justify-content: space-around;
-    /* Vertically align items */
 }
 
 .p1 {
     color: black;
     display: flex;
+    font-size: 1.15rem;
+    font-weight: bold;
 }
 
 .p2 {
     color: black;
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    font-weight: bold;
 }
 
 
@@ -39,15 +40,6 @@
     justify-content: center;
     margin-top: 20px;
 }
-
-/* .tablink {
-    background-color: #f0f0f0;
-    border: none;
-    color: black;
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-} */
 
 .tablink.active {
     background-color: #ccc;
@@ -107,9 +99,6 @@
     margin-bottom: 50px;
 }
 
-#prediction_result {
-    z-index: 9999;
-}
 
 .sub {
     display: flex;
@@ -118,21 +107,17 @@
 }
 
 .prediction {
-    background-image: url('diabetes.jpeg');
+    background-image: url('diabetes.png');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: top; */
     background-size: 100%;
-    /* height: 1000px; */
 }
 
 #heart {
-    background-image: url('heart.jpeg');
+    background-image: url('heart.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100%;
-    /* background-size:; */
-    /* height: 1200px; */
 }
 
 .body2,
@@ -141,10 +126,8 @@
     justify-content: center;
     height: 700px;
     opacity: 0.1;
-    /* Adjust the opacity value to decrease darkness */
 }
 
-/* CSS for the switch buttons */
 .tablink {
     background-color: transparent;
     border: none;
@@ -167,18 +150,10 @@
     transform: scale(1.05);
 }
 
-
-
-/* Additional styling for active tab */
 .prediction.active {
     display: block;
 }
 
-/*  */
-/* Set background images */
-
-
-/* Center content vertically and horizontally */
 .container {
     display: flex;
     justify-content: center;
@@ -186,7 +161,6 @@
     height: 100vh;
 }
 
-/* Style tabs */
 .tabs {
     display: flex;
     justify-content: center;
@@ -217,7 +191,6 @@
     color: red;
 }
 
-/* Style prediction sections */
 .prediction {
     display: none;
     background-color: rgba(255, 255, 255, 0.8);
@@ -227,7 +200,6 @@
     margin-top: 20px;
 }
 
-/* Style headings */
 h1,
 h2 {
     text-align: center;
@@ -246,6 +218,7 @@ h2 {
     color: black;
     background-color: aquamarine;
 }
+
 .pred_result {
     background-color: #ccffcc;
     margin-top: 10px;
@@ -262,7 +235,6 @@ h2 {
     border-radius: 5px;
 }
 
-/* Define breakpoints for different screen sizes */
 @media screen and (max-width: 768px) {
 
     .main,
@@ -293,8 +265,9 @@ h2 {
 }
 
 .h1 {
-    font-size: 3rem;
-    /* Adjust the font size for smaller screens */
+    font-size: 4rem;
 }
 
-/* Rest of your existing CSS styles... */
+.h2 {
+    font-size: 4rem;
+}

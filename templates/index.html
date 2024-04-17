@@ -67,7 +67,6 @@
                 <button type="submit" class="result">Diabetes test result</button>
             </div>
         </form>
-        <!-- Place this where you want the prediction result to appear -->
         <div class="pred_result">
             <h2>{{diabetes_prediction_text}}</h2>
         </div>
@@ -75,9 +74,9 @@
             <h2>Suggestions:</h2>
             <ul>
                 {% for suggestion in suggestions %}
-                <h4>
+                <h3>
                     <li>{{ suggestion }}</li>
-                </h4>
+                </h3>
                 {% endfor %}
             </ul>
         </div>
@@ -85,7 +84,7 @@
     </div>
     <dr>
         <div id="heart" class="prediction hidden">
-            <h1 class="h">Heart Disease Prediction</h1>
+            <h1 class="h2">Heart Disease Prediction</h1>
             <form action="/predict_heart_disease" method="post" onsubmit="validateForm(event, 'heart')">
                 <div class="main2">
                     <div class="sub">
@@ -179,13 +178,15 @@
                 </div>
             </form>
             <div class="pred_result">
-                {{heart_prediction_text}}
+                <h2>{{heart_prediction_text}}</h2>
             </div>
             <div class="suggestions">
                 <h2>Suggestions:</h2>
                 <ul>
                     {% for suggestion in suggestions2 %}
-                    <li>{{ suggestion }}</li>
+                    <h3>
+                        <li>{{ suggestion }}</li>
+                    </h3>
                     {% endfor %}
                 </ul>
             </div>

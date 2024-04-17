@@ -23,7 +23,7 @@ def predict_diabetes():
 
         # Perform prediction using the loaded model
         prediction_diabetes = diabetes_model.predict(final_features)
-        output = "diabetic" if prediction_diabetes[0] == 1 else "non-diabetic"
+        output = "diabetic" if prediction_diabetes[0] == 1 else "not diabetic"
 
         # Generate suggestions based on input values
         suggestions = generate_diabetes_suggestions(int_features)
@@ -43,14 +43,18 @@ def predict_heart_disease():
 
         # Perform prediction using the loaded model
         prediction = heart_disease_model.predict([int_features])
-        output = "positive" if prediction == 1 else "negative"
+        output = (
+            "is having heart disease"
+            if prediction == 1
+            else "does not have any heart disease"
+        )
 
         # Generate suggestions based on input values
         suggestions = generate_heart_disease_suggestions(int_features)
 
         return render_template(
             "index.html",
-            heart_prediction_text="The person has {}".format(output),
+            heart_prediction_text="The person {}".format(output),
             suggestions2=suggestions,
         )
 
