@@ -18,7 +18,7 @@
         <button class="tablink active" onclick="openPrediction(event, 'diabetes')">Diabetes Prediction</button>
         <button class="tablink" onclick="openPrediction(event, 'heart')">Heart Disease Prediction</button>
     </div>
-    <div id="diabetes" class="diabetes">
+    <div id="diabetes" class="prediction active">
         <h1 class="h1">Diabetes Prediction</h1>
         <form action="/predict_diabetes" method="post" onsubmit="validateForm(event, 'diabetes')">
             <div class="main">
@@ -80,7 +80,6 @@
         </div>
 
     </div>
-    <dr>
         <div id="heart" class="prediction hidden">
             <h1 class="h2">Heart Disease Prediction</h1>
             <form action="/predict_heart_disease" method="post" onsubmit="validateForm(event, 'heart')">
@@ -93,6 +92,7 @@
                         <div class="label">
                             <p class="p2">Sex</p>
                             <select name="sex" class="input">
+                                <option value="" disabled selected hidden>Sex</option>
                                 <option value="0">Female</option>
                                 <option value="1">Male</option>
                             </select>
@@ -100,6 +100,7 @@
                         <div class="label">
                             <p class="p2">Chest Pain types</p>
                             <select name="cp" class="input">
+                                <option value="" disabled selected hidden>Select Chest Pain type</option>
                                 <option value="0">Typical angina</option>
                                 <option value="1">Atypical angina</option>
                                 <option value="2">Non-anginal pain</option>
@@ -119,6 +120,7 @@
                         <div class="label">
                             <p class="p2">Fasting Blood Sugar &gt; 120 mg/dl</p>
                             <select name="fbs" class="input">
+                                <option value="" disabled selected hidden>Fasting Blood Sugar</option>
                                 <option value="0">No</option>
                                 <option value="1">Yes</option>
                             </select>
@@ -137,6 +139,7 @@
                         <div class="label">
                             <p class="p2">Exercise Induced Angina</p>
                             <select name="exang" class="input">
+                                <option value="" disabled selected hidden>Exercise Induced Angina</option>
                                 <option value="0">No</option>
                                 <option value="1">Yes</option>
                             </select>
@@ -149,6 +152,7 @@
                         <div class="label">
                             <p class="p2">Slope of the peak exercise ST segment</p>
                             <select name="slope" class="input">
+                                <option value="" disabled selected hidden>Slope of the peak exercise ST segment</option>
                                 <option value="0">Upsloping</option>
                                 <option value="1">Flat</option>
                                 <option value="2">Downsloping</option>
@@ -164,6 +168,7 @@
                         <div class="label">
                             <p class="p2">Thal</p>
                             <select name="thal" class="input">
+                                <option value="" disabled selected hidden>Select Thal</option>
                                 <option value="0">Normal</option>
                                 <option value="1">Fixed defect</option>
                                 <option value="2">Reversible defect</option>

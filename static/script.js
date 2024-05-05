@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("diabetes").style.display = "block";
 });
-
 function openPrediction(evt, predictionName) {
     var i, prediction, tablinks;
     prediction = document.getElementsByClassName("prediction");
