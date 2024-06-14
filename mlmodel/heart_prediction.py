@@ -8,7 +8,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 
 
-heart_data = pd.read_csv("/content/heart.csv")
+heart_data = pd.read_csv("Disease_Prediction\mlmodel\heart.csv")
 
 heart_data.head()
 
@@ -36,9 +36,9 @@ X_train, X_test, Y_train, Y_test = train_test_split(
 print(X.shape, X_train.shape, X_test.shape)
 
 # classifier = DecisionTreeClassifier(random_state=42)
-classifier = svm.SVC(kernel="linear")
+# classifier = svm.SVC(kernel="linear")
 # classifier = RandomForestClassifier(n_estimators=100, random_state=42)
-# classifier = LogisticRegression()
+classifier = LogisticRegression()
 
 classifier.fit(X_train, Y_train)
 

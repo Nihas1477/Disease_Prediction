@@ -8,7 +8,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import LogisticRegression
 
 # loading the diabetes dataset to a pandas DataFrame
-diabetes_dataset = pd.read_csv("/content/diabetes.csv")
+diabetes_dataset = pd.read_csv("Disease_Prediction\mlmodel\diabetes.csv")
 
 # printing the first 5 rows of the dataset
 diabetes_dataset.head()
