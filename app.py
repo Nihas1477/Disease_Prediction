@@ -5,8 +5,8 @@ import numpy as np
 app = Flask(__name__, static_folder="static")
 
 # Load your machine learning models
-diabetes_model = pickle.load(open("diabetes_model.sav", "rb"))
-heart_disease_model = pickle.load(open("heart_disease_model.sav", "rb"))
+diabetes_model = pickle.load(open("Disease_Prediction\diabetes_model.sav", "rb"))
+heart_disease_model = pickle.load(open("Disease_Prediction\heart_disease_model.sav", "rb"))
 
 
 @app.route("/")
