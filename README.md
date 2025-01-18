@@ -14,6 +14,28 @@ A machine learning-based project to predict diseases based on input symptoms. Th
 - Flask for the web framework
 - HTML and CSS for front-end
 
+## How I Developed This Project
+1. **Dataset Collection**:
+   - I collected a publicly available dataset that maps symptoms to diseases.
+   - The dataset was cleaned and preprocessed using Pandas to handle missing values and inconsistencies.
+
+2. **Model Development**:
+   - I used Scikit-learn to build machine learning models, including decision trees and random forests.
+   - The model was trained on the dataset to predict diseases based on input symptoms.
+   - After training, the model was saved using joblib for later use in the web application.
+
+3. **Web Application Development**:
+   - I used Flask to create a simple and interactive web interface.
+   - The interface allows users to input symptoms, and the application returns a prediction based on the trained model.
+   - HTML and CSS were used for designing the front-end, ensuring a user-friendly experience.
+
+4. **Testing and Optimization**:
+   - The application was tested with various inputs to ensure accuracy and reliability.
+   - Model performance was evaluated and optimized using techniques like hyperparameter tuning.
+
+5. **Deployment**:
+   - The application can be deployed locally by running the Flask server.
+
 ## How to Run the Project
 1. Clone the repository:
    ```bash
@@ -23,11 +45,15 @@ A machine learning-based project to predict diseases based on input symptoms. Th
    ```bash
    cd Disease_Prediction
    ```
-3. Run the Flask application:
+3. Install the required dependencies manually (since no `requirements.txt` file is used):
+   ```bash
+   pip install flask pandas scikit-learn
+   ```
+4. Run the Flask application:
    ```bash
    python app.py
    ```
-4. Open your web browser and visit:
+5. Open your web browser and visit:
    ```plaintext
    http://127.0.0.1:5000/
    ```
