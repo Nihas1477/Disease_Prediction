@@ -23,15 +23,11 @@ A machine learning-based project to predict diseases based on input symptoms. Th
    ```bash
    cd Disease_Prediction
    ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the Flask application:
+3. Run the Flask application:
    ```bash
    python app.py
    ```
-5. Open your web browser and visit:
+4. Open your web browser and visit:
    ```plaintext
    http://127.0.0.1:5000/
    ```
